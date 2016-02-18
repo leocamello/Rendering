@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- rodar 'chrome.exe --allow-file-access-from-files --> 
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Rendering - Fundamentos da Computação Gráfica</title>
+</head>
+
+<body>
+    <h1>Rendering - Fundamentos da Computação Gráfica</h1>
+    <p>Aluno: Leonardo Henrique Camello do Nascimento</p>
+    <p>Professor: Marcelo Gattass</p>
+    <p>
+        <select id="select" style="width: 500px" onchange="selectChanged()">
+            <option value="0">Default Scene</option>
+            <option value="1">4 Lights + 7 Spheres</option>
+            <option value="1">2 Cube + 3 Sphere in a Room</option>
+        </select>
+    </p>
+    <canvas id="canvas">
+        Please use a browser that supports "canvas".
+    </canvas>
+    <p>x -500<input id="x_range" type="range" min="-500" max="500" style="width:450px" oninput="valueChanged()">500</p>
+    <p>y -500<input id="y_range" type="range" min="-500" max="500" style="width:450px" oninput="valueChanged()">500</p>
+    <p>z -500<input id="z_range" type="range" min="-500" max="500" style="width:450px" oninput="valueChanged()">500</p>
+    <script src="three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
